@@ -26,9 +26,9 @@ Other technologies and tools used:
 
 ## URL / Domain
 
-The project is not yet deployed online.
+The project is published online using GitHub Pages.
 
-If the website is deployed in the future, the live URL can be added here.
+**Live Website:** https://mattloweespiritu-afk.github.io/BINIRAYAN-FESTIVAL/
 
 ## Website Pages
 
