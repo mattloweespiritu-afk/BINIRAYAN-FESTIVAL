@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History | Binirayan Festival</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/tailwind-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/webp" href="../images/logo/ChatGPT Image Apr 2, 2026, 10_10_58 PM.webp">
+</head>
+<body class="bg-sand text-charcoal font-sans overflow-x-hidden">
+
+    <!-- ========== NAVBAR (Top Navigation Bar) ========== -->
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center bg-charcoal">
+        <div class="flex items-center space-x-3">
+            <div class="w-12 h-12 bg-gold rounded-full overflow-hidden flex items-center justify-center border-2 border-white shadow-lg">
+                <img src="../images/logo/ChatGPT Image Apr 2, 2026, 10_10_58 PM.webp" alt="Binirayan Logo" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div>
+                <div class="text-white font-serif font-bold leading-none tracking-wider text-xl">BINIRAYAN</div>
+                <p class="text-gold text-[10px] uppercase tracking-[0.2em]">Antique, Philippines</p>
+            </div>
+        </div>
+
+        <ul class="hidden lg:flex space-x-8 font-semibold text-sm uppercase tracking-widest text-white">
+            <li><a href="../index.html" class="nav-link hover:text-gold transition">Home</a></li>
+            <li><a href="about.html" class="nav-link hover:text-gold transition">About</a></li>
+            <li><a href="history.html" class="nav-link active text-gold" aria-current="page">History</a></li>
+            <li><a href="events.html" class="nav-link hover:text-gold transition">Events</a></li>
+            <li><a href="gallery.html" class="nav-link hover:text-gold transition">Gallery</a></li>
+            <li><a href="news.html" class="nav-link hover:text-gold transition">News</a></li>
+            <li><a href="contact.html" class="nav-link hover:text-gold transition">Contact</a></li>
+        </ul>
+
+        <button id="menu-btn" class="lg:hidden text-white focus:outline-none" aria-label="Open menu">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- MOBILE SIDEBAR -->
+    <div id="sidebar" class="fixed inset-0 bg-charcoal z-[60] transform translate-x-full transition-transform duration-300 lg:hidden">
+        <div class="flex justify-end p-6">
+            <button id="close-btn" class="text-white text-4xl" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="flex flex-col items-center space-y-8 pt-10 text-white font-serif text-2xl">
+            <li><a href="../index.html" class="hover:text-gold">Home</a></li>
+            <li><a href="about.html" class="hover:text-gold">About</a></li>
+            <li><a href="history.html" class="text-gold" aria-current="page">History</a></li>
+            <li><a href="events.html" class="hover:text-gold">Events</a></li>
+            <li><a href="gallery.html" class="hover:text-gold">Gallery</a></li>
+            <li><a href="news.html" class="hover:text-gold">News</a></li>
+            <li><a href="contact.html" class="hover:text-gold">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ========== BODY/CONTENT (Main Page Content) ========== -->
+    <!-- HERO -->
+    <header class="relative min-h-[65vh] flex items-center overflow-hidden">
+        <img src="../images/photos/530936795_1086006340338670_1975303508160695955_n.webp" alt="Binirayan heritage monument" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-charcoal/85 via-brown/65 to-charcoal/45"></div>
+
+        <div class="relative z-10 container mx-auto px-6 md:px-12 py-20">
+            <div class="max-w-3xl">
+                <span class="inline-block text-gold uppercase tracking-[0.3em] text-xs md:text-sm font-bold mb-5">
+                    History of the Festival
+                </span>
+
+                <h1 class="font-serif text-4xl md:text-6xl xl:text-7xl text-white leading-[0.95] mb-5 max-w-2xl">
+                    The Story Behind Binirayan
+                </h1>
+
+                <p class="text-sand/90 text-base md:text-lg leading-relaxed max-w-2xl">
+                    A heritage-centered journey through memory, migration, legend, and the cultural identity of Antique.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 md:py-20">
+
+        <!-- INTRO -->
+        <section class="max-w-4xl mx-auto text-center mb-16 md:mb-20">
+            <span class="text-orange font-bold uppercase tracking-[0.24em] text-xs">Historical Background</span>
+            <h2 class="font-serif text-3xl md:text-5xl text-brown mt-3 mb-5">From Legend to Cultural Memory</h2>
+            <p class="text-lg leading-relaxed text-charcoal/80">
+                The history remembered through Binirayan lives at the meeting point of legend, oral tradition, and regional cultural memory. For Antique&ntilde;os, the story of the Datus is not only about origins, but also about identity, migration, resilience, and the meaning of belonging.
+            </p>
+        </section>
+
+        <!-- TIMELINE STORY -->
+        <section class="space-y-16 md:space-y-20">
+
+            <!-- Arrival -->
+            <div class="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-14 items-center">
+                <div class="space-y-5">
+                    <span class="text-gold font-bold uppercase tracking-[0.2em] text-xs">Chapter 1</span>
+                    <h2 class="font-serif text-3xl md:text-5xl text-deepRed leading-tight">
+                        The Arrival of the Datus
+                    </h2>
+                    <p class="text-charcoal/85 text-lg leading-relaxed">
+                        Local tradition tells of the Ten Bornean Datus who fled tyranny in search of freedom. They sailed across the seas in balangay boats, carrying with them leadership, memory, and the hope of beginning anew in a place where they could live with dignity.
+                    </p>
+                    <p class="text-charcoal/80 leading-relaxed">
+                        Their remembered landing at Malandog in Hamtic became one of the central stories in Antique's historical imagination. Over time, this narrative became deeply woven into community identity and later into the symbolic meaning of the Binirayan Festival itself.
+                    </p>
+                </div>
+
+                <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white/70">
+                    <img src="../images/photos/530936795_1086006340338670_1975303508160695955_n.webp" alt="Festival reenactment and celebration" class="w-full h-[300px] md:h-[380px] object-cover">
+                </div>
+            </div>
+
+            <!-- Maragtas -->
+            <div class="grid lg:grid-cols-[0.95fr_1.05fr] gap-10 lg:gap-14 items-center">
+                <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white/70 order-2 lg:order-1">
+                    <img src="../images/photos/images (2) (1).webp" alt="Antique heritage monument" class="w-full h-[300px] md:h-[380px] object-cover">
+                </div>
+
+                <div class="space-y-5 order-1 lg:order-2">
+                    <span class="text-orange font-bold uppercase tracking-[0.2em] text-xs">Chapter 2</span>
+                    <h2 class="font-serif text-3xl md:text-5xl text-deepRed leading-tight">
+                        The Maragtas Tradition
+                    </h2>
+                    <p class="text-charcoal/85 text-lg leading-relaxed">
+                        The Binirayan story is often linked to the Maragtas tradition, which recounts the encounter between the arriving Datus and the Ati people led in legend by Marikudo and Maniwantiwan. In this tradition, the story of settlement, exchange, and coexistence became part of the remembered beginnings of Panay communities.
+                    </p>
+                    <p class="text-charcoal/80 leading-relaxed">
+                        In today's cultural context, this story is presented respectfully as part of Antique's remembered heritage. It is important to understand that Maragtas is widely treated as a compilation of legends and oral history, and the festival draws on this remembered tradition as a source of cultural meaning rather than presenting it as simple uncontested historical fact.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Cultural Note -->
+            <div class="bg-white rounded-2xl shadow-lg border-l-4 border-gold p-6 md:p-8">
+                <span class="text-orange font-bold uppercase tracking-[0.22em] text-xs">Cultural Note</span>
+                <h3 class="font-serif text-2xl md:text-3xl text-brown mt-3 mb-4">Legend, Tradition, and Memory</h3>
+                <p class="text-charcoal/80 leading-relaxed mb-4">
+                    The story of the Ten Bornean Datus remains deeply embedded in the cultural memory of Panay and Antique. For many communities, it continues to function as a symbolic origin story that expresses ideas of migration, leadership, settlement, and identity.
+                </p>
+                <p class="text-charcoal/80 leading-relaxed">
+                    In this website, the story is presented respectfully as part of Antique's heritage and festival tradition. Binirayan celebrates this narrative not only as a story of the past, but also as a living source of identity, pride, and continuity for the province.
+                </p>
+            </div>
+
+            <!-- Festival creation -->
+            <div class="bg-white rounded-3xl shadow-2xl border-t-8 border-gold p-8 md:p-12">
+                <div class="max-w-4xl mx-auto text-center">
+                    <span class="text-orange font-bold uppercase tracking-[0.24em] text-xs">Chapter 3</span>
+                    <h2 class="font-serif text-3xl md:text-5xl text-brown mt-3 mb-6">The Establishment of Binirayan Festival</h2>
+                    <p class="text-lg text-charcoal/85 leading-relaxed mb-5">
+                        The modern Binirayan Festival was established in <strong>1974</strong> under the leadership of Governor Evelio B. Javier. It was conceived as a cultural celebration that would strengthen Antique&ntilde;o pride, honor remembered Malay roots, and provide the province with a unifying festival of heritage and identity.
+                    </p>
+                    <p class="text-charcoal/80 leading-relaxed mb-5">
+                        Over time, the festival evolved into Antique's premier cultural event, featuring reenactments, ceremonies, parades, performances, and community participation. Its dates changed across different administrations before eventually being celebrated again in December, but its symbolic purpose remained closely tied to the province's effort to preserve memory and celebrate local culture.
+                    </p>
+                    <p class="text-charcoal/80 leading-relaxed">
+                        Today, Binirayan continues to function not only as a historical commemoration, but also as a public expression of unity, tourism, and provincial identity.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEGACY SECTION -->
+        <section class="mt-20 md:mt-24">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-orange font-bold uppercase tracking-[0.24em] text-xs">Enduring Legacy</span>
+                <h2 class="font-serif text-3xl md:text-5xl text-brown mt-3 mb-4">Why the History Still Matters</h2>
+                <p class="text-charcoal/80 leading-relaxed text-lg">
+                    Binirayan continues to matter because it transforms remembered history into living cultural identity.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-deepRed">
+                    <div class="text-3xl mb-4">&#128220;</div>
+                    <h3 class="font-serif text-2xl text-brown mb-3">Memory</h3>
+                    <p class="text-charcoal/75 leading-relaxed">
+                        It preserves stories that remain central to Antique's collective memory and cultural imagination.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-gold">
+                    <div class="text-3xl mb-4">&#127963;&#65039;</div>
+                    <h3 class="font-serif text-2xl text-brown mb-3">Identity</h3>
+                    <p class="text-charcoal/75 leading-relaxed">
+                        It connects today's generation with the province's roots, values, and shared sense of belonging.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-seaBlue">
+                    <div class="text-3xl mb-4">&#127881;</div>
+                    <h3 class="font-serif text-2xl text-brown mb-3">Celebration</h3>
+                    <p class="text-charcoal/75 leading-relaxed">
+                        It turns historical memory into a public celebration that unites communities across Antique.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="mt-20 md:mt-24">
+            <div class="bg-charcoal text-white rounded-3xl px-8 md:px-14 py-12 shadow-2xl text-center">
+                <span class="text-gold uppercase tracking-[0.25em] text-xs font-bold">Continue Exploring</span>
+                <h2 class="font-serif text-3xl md:text-5xl mt-4 mb-5">See How History Lives Through Celebration</h2>
+                <p class="text-sand/75 max-w-2xl mx-auto leading-relaxed mb-8">
+                    Explore the events, performances, and festival moments that continue to bring Binirayan's story to life.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="events.html" class="bg-gold text-charcoal hover:bg-white px-8 py-4 rounded-full font-semibold transition-all duration-300">
+                        View Events
+                    </a>
+                    <a href="gallery.html" class="bg-deepRed hover:bg-orange text-white px-8 py-4 rounded-full font-semibold transition-all duration-300">
+                        See Gallery
+                    </a>
+                    <a href="about.html" class="border border-white/30 hover:border-gold hover:text-gold px-8 py-4 rounded-full font-semibold transition-all duration-300">
+                        Back to About
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER (Shared Site Footer) ========== -->
+<footer class="bg-charcoal text-sand pt-16 pb-8 px-6">
+        <div class="container mx-auto grid md:grid-cols-4 gap-12 mb-12 border-b border-gray-700 pb-12">
+            <div class="col-span-1">
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-10 h-10 bg-gold rounded-full overflow-hidden flex items-center justify-center border-2 border-white shadow-lg">
+                        <img src="../images/logo/ChatGPT Image Apr 2, 2026, 10_10_58 PM.webp" alt="Binirayan Logo" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <span class="font-serif text-xl tracking-widest text-white">BINIRAYAN</span>
+                </div>
+                <p class="text-sm text-gray-400 leading-relaxed italic">
+                    The Binirayan Festival celebrates the historic arrival of the ten Bornean Datus in the island of Panay.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-white font-serif mb-6 uppercase tracking-widest text-lg">Quick Links</h2>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="about.html" class="hover:text-gold transition">About Antique</a></li>
+                    <li><a href="history.html" class="hover:text-gold transition">History of Binirayan</a></li>
+                    <li><a href="events.html" class="hover:text-gold transition">Full Schedule</a></li>
+                    <li><a href="gallery.html" class="hover:text-gold transition">Photo Gallery</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-white font-serif mb-6 uppercase tracking-widest text-lg">Follow Us</h2>
+                <div class="flex items-center gap-3">
+                    <a href="https://www.facebook.com/binirayan2025"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visit Binirayan 2025 Facebook page"
+                       class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold hover:text-charcoal text-white flex items-center justify-center transition-all duration-300 shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-4 h-4 fill-current">
+                            <path d="M279.14 288l14.22-92.66h-88.91V135.1c0-25.35 12.42-50.06 52.24-50.06H297V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.instagram.com/antiquetourismoffice/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visit Antique Tourism Office Instagram page"
+                       class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold hover:text-charcoal text-white flex items-center justify-center transition-all duration-300 shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 fill-current">
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.4-74.7-74.7s33.4-74.7 74.7-74.7 74.7 33.4 74.7 74.7-33.5 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9-14.9 0-26.9-12-26.9-26.9 0-14.9 12-26.9 26.9-26.9 14.8 0 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.3-9.8-66.7-35.6-92.4S354.2 3.7 318.9 2C283.4.3 164.7.3 129.2 2 93.9 3.7 62.5 11.8 36.8 37.6S3.7 93.9 2 129.2C.3 164.7.3 283.4 2 318.9c1.7 35.3 9.8 66.7 35.6 92.4s57.1 33.9 92.4 35.6c35.5 1.7 154.2 1.7 189.7 0 35.3-1.7 66.7-9.8 92.4-35.6s33.9-57.1 35.6-92.4c1.7-35.5 1.7-154.2 0-189.7zM398.8 388c-7.7 19.3-22.6 34.2-41.9 41.9-29 11.5-97.8 8.8-132.8 8.8s-103.9 2.7-132.8-8.8c-19.3-7.7-34.2-22.6-41.9-41.9-11.5-29-8.8-97.8-8.8-132.8s-2.7-103.9 8.8-132.8c7.7-19.3 22.6-34.2 41.9-41.9 29-11.5 97.8-8.8 132.8-8.8s103.9-2.7 132.8 8.8c19.3 7.7 34.2 22.6 41.9 41.9 11.5 29 8.8 97.8 8.8 132.8s2.7 103.8-8.8 132.8z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.youtube.com/@ProvTourismAntique/videos"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visit Love Antique YouTube channel"
+                       class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold hover:text-charcoal text-white flex items-center justify-center transition-all duration-300 shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-4 h-4 fill-current">
+                            <path d="M549.655 124.083c-6.281-23.65-24.812-42.172-48.463-48.453C458.769 64 288 64 288 64S117.231 64 74.808 75.63c-23.651 6.281-42.182 24.803-48.463 48.453C16 166.505 16 256 16 256s0 89.495 10.345 131.917c6.281 23.65 24.812 42.172 48.463 48.453C117.231 448 288 448 288 448s170.769 0 213.192-11.63c23.651-6.281 42.182-24.803 48.463-48.453C560 345.495 560 256 560 256s0-89.495-10.345-131.917zM232 336V176l142 80-142 80z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-white font-serif mb-6 uppercase tracking-widest text-lg">Location</h2>
+                <a href="contact.html#festival-map"
+                   aria-label="Go to festival map on the Contact page"
+                   class="text-sm text-gray-400 leading-relaxed italic hover:text-gold transition inline-block">
+                    Provincial Capitol Ground,<br>
+                    San Jose de Buenavista,<br>
+                    Antique, Philippines
+                </a>
+            </div>
+        </div>
+
+        <div class="text-center text-xs text-gray-500">
+            <p>&copy; 2026 Binirayan Festival. All Rights Reserved.</p>
+            <p class="mt-2 text-gold/50 italic">Note: This is a school project for WS101.</p>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

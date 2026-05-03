@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binirayan Festival | Heritage of Antique</title>
+    <link rel="icon" type="image/webp" href="images/logo/ChatGPT Image Apr 2, 2026, 10_10_58 PM.webp" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-sand text-charcoal font-sans overflow-x-hidden">
+
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-white text-charcoal px-4 py-2 rounded-md z-[100] shadow-lg">
+        Skip to main content
+    </a>
+
+    <!-- ========== NAVBAR (Top Navigation Bar) ========== -->
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center bg-charcoal">
+        <div class="flex items-center space-x-3">
+            <div class="w-12 h-12 bg-gold rounded-full overflow-hidden flex items-center justify-center border-2 border-white shadow-lg">
+                <img src="images/logo/ChatGPT Image Apr 2, 2026, 10_10_58 PM.webp" alt="Binirayan Logo" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div>
+                <div class="text-white font-serif font-bold leading-none tracking-wider text-xl">BINIRAYAN</div>
+                <p class="text-gold text-[10px] uppercase tracking-[0.2em]">Antique, Philippines</p>
+            </div>
+        </div>
+
+        <ul class="hidden lg:flex space-x-8 font-semibold text-sm uppercase tracking-widest text-white">
+            <li><a href="index.html" class="nav-link active text-gold" aria-current="page">Home</a></li>
+            <li><a href="html/about.html" class="nav-link hover:text-gold transition">About</a></li>
+            <li><a href="html/history.html" class="nav-link hover:text-gold transition">History</a></li>
+            <li><a href="html/events.html" class="nav-link hover:text-gold transition">Events</a></li>
+            <li><a href="html/gallery.html" class="nav-link hover:text-gold transition">Gallery</a></li>
+            <li><a href="html/news.html" class="nav-link hover:text-gold transition">News</a></li>
+            <li><a href="html/contact.html" class="nav-link hover:text-gold transition">Contact</a></li>
+        </ul>
+
+        <button id="menu-btn" class="lg:hidden text-white focus:outline-none" aria-label="Open menu">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- MOBILE SIDEBAR -->
+    <div id="sidebar" class="fixed inset-0 bg-charcoal z-[60] transform translate-x-full transition-transform duration-300 lg:hidden">
+        <div class="flex justify-end p-6">
+            <button id="close-btn" class="text-white text-4xl" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="flex flex-col items-center space-y-8 pt-10 text-white font-serif text-2xl">
+            <li><a href="index.html" class="hover:text-gold" aria-current="page">Home</a></li>
+            <li><a href="html/about.html" class="hover:text-gold">About</a></li>
+            <li><a href="html/history.html" class="hover:text-gold">History</a></li>
+            <li><a href="html/events.html" class="hover:text-gold">Events</a></li>
+            <li><a href="html/gallery.html" class="hover:text-gold">Gallery</a></li>
+            <li><a href="html/news.html" class="hover:text-gold">News</a></li>
+            <li><a href="html/contact.html" class="hover:text-gold">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ========== B   ODY/CONTENT (Main Page Content) ========== -->
+    <main id="main-content">
+        <!-- HERO -->
+        <header id="hero-section" class="relative h-screen w-full overflow-hidden">
+            <video id="hero-video" autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+                <source src="/videos/AQOSZ5Fg8iqethlPfujHWCHJHyvoBMXc-Txc7EnBqqzMu2zer3rrdjMPtLD4QlLLPfjqqT_mi5d4WasRpg8IAdEPWCwUmsXO5P-QvSBqZXLWsA.mp4" type="video/mp4">
+            </video>
+            <audio id="hero-audio" autoplay preload="auto" loop aria-hidden="true">
+                <source src="audio/Antiqueño Ako.mp3" type="audio/mpeg">
+            </audio>
+        </header>
+
+        <!-- COUNTDOWN -->
+        <section class="relative -mt-16 z-30 container mx-auto px-4">
+            <div class="bg-white rounded-2xl shadow-2xl p-8 border-b-4 border-gold">
+                <h2 class="text-center font-serif text-brown uppercase tracking-widest mb-3">Festival Countdown</h2>
+                <p id="countdown-message" class="text-center text-sm text-charcoal/70 mb-6 italic">Countdown to Binirayan Festival</p>
+
+                <div id="countdown" class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="bg-sand/50 p-4 rounded-lg border border-gold/20">
+                        <span id="days" class="block text-4xl font-bold text-deepRed">00</span>
+                        <span class="text-xs uppercase text-brown tracking-tighter">Days</span>
+                    </div>
+                    <div class="bg-sand/50 p-4 rounded-lg border border-gold/20">
+                        <span id="hours" class="block text-4xl font-bold text-deepRed">00</span>
+                        <span class="text-xs uppercase text-brown tracking-tighter">Hours</span>
+                    </div>
+                    <div class="bg-sand/50 p-4 rounded-lg border border-gold/20">
+                        <span id="minutes" class="block text-4xl font-bold text-deepRed">00</span>
+                        <span class="text-xs uppercase text-brown tracking-tighter">Minutes</span>
+                    </div>
+                    <div class="bg-sand/50 p-4 rounded-lg border border-gold/20">
+                        <span id="seconds" class="block text-4xl font-bold text-deepRed">00</span>
+                        <span class="text-xs uppercase text-brown tracking-tighter">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HERITAGE SECTION -->
+        <section class="bg-charcoal py-24 px-6 md:px-20 text-white overflow-hidden">
+            <div class="container mx-auto flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <span class="text-gold uppercase tracking-[0.3em] text-xs font-bold">Authentic Experience</span>
+                    <h2 class="font-serif text-4xl md:text-5xl my-6 tracking-wide italic leading-tight">THE SOUL OF THE PROVINCE</h2>
+                    <p class="text-sand/70 leading-relaxed mb-10 italic">
+                        Binirayan is more than a parade; it is a sacred journey back to the Malandog landing.
+                        It honors the arrival of the ten Bornean Datus, whose courage and leadership
+                        laid the foundation for the civilization of Antique and the entire island of Panay.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="border border-white/10 p-6 rounded-lg bg-white/5 backdrop-blur-sm shadow-xl">
+                            <h3 class="text-gold font-serif uppercase text-sm tracking-widest mb-2 border-b border-gold/30 pb-2">The Malandog Landing</h3>
+                            <p class="text-[11px] text-sand/50 leading-loose">Commemorating the site where the Bornean Datus first anchored their sails.</p>
+                        </div>
+                        <div class="border border-white/10 p-6 rounded-lg bg-white/5 backdrop-blur-sm shadow-xl">
+                            <h3 class="text-gold font-serif uppercase text-sm tracking-widest mb-2 border-b border-gold/30 pb-2">Ancestral Valor</h3>
+                            <p class="text-[11px] text-sand/50 leading-loose">Preserving the legacy of freedom and culture brought by our founding ancestors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-gold z-0"></div>
+                    <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-gold z-0"></div>
+
+                    <div class="relative z-10 rounded-xl overflow-hidden shadow-2xl border border-white/10 group">
+                        <img src="images/photos/530936795_1086006340338670_1975303508160695955_n.webp"
+                             alt="The Ten Bornean Datus Monument"
+                             class="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FESTIVAL INTRO -->
+        <section id="festival-intro" class="py-24 px-6 container mx-auto text-center">
+            <div class="max-w-3xl mx-auto">
+                <span class="text-orange font-bold uppercase tracking-widest text-sm italic">Where Beauty Meets Tradition</span>
+                <h2 class="font-serif text-4xl md:text-5xl text-brown mt-2 mb-6 italic">Celebrate the Legacy</h2>
+                <p class="text-lg leading-relaxed text-charcoal/80">
+                    This website serves as an informational and promotional platform for the Binirayan Festival, presenting its history, festival activities, schedule of events, cultural highlights, and current updates in a clear and engaging format.
+                </p>
+            </div>
+        </section>
+
+        <!-- FESTIVAL ATMOSPHERE -->
+        <section class="py-20 md:py-24 px-6 md:px-20 bg-gradient-to-b from-sand to-white/60">
+            <div class="container mx-auto">
+                <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+                    <div>
+                        <span class="text-orange font-bold uppercase tracking-[0.25em] text-xs">Festival Atmosphere</span>
+                        <h2 class="font-serif text-4xl md:text-5xl text-brown mt-3 mb-5 italic leading-tight">
+                            Where Heritage Comes Alive in Color and Celebration
+                        </h2>
+                        <p class="text-charcoal/80 text-lg leading-relaxed mb-6">
+                            Binirayan is not only remembered through story - it is felt through music, movement, torch-lighting, street performances, and the shared joy of the Antique&ntilde;o community.
+                        </p>
+                        <p class="text-charcoal/75 leading-relaxed mb-8">
+                            From ceremonial reenactments to vibrant public gatherings, the festival transforms heritage into a living experience that welcomes both locals and visitors into the spirit of Antique.
+                        </p>
+
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 rounded-full bg-deepRed text-white text-sm shadow-md">Street Dancing</span>
+                            <span class="px-4 py-2 rounded-full bg-gold text-white text-sm shadow-md">Torch-Lighting</span>
+                            <span class="px-4 py-2 rounded-full bg-seaBlue text-white text-sm shadow-md">Community Pride</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="col-span-2 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/70">
+                            <img src="images/photos/h_1529559098e.webp" alt="Binirayan Festival dancers" class="w-full h-[280px] md:h-[340px] object-cover">
+                        </div>
+
+                        <div class="rounded-2xl overflow-hidden shadow-xl border-2 border-white/70">
+                            <img src="images/photos/598250874_1435630177929130_775570996865898791_n.webp" alt="Binirayan cultural heritage" class="w-full h-[180px] md:h-[220px] object-cover">
+                        </div>
+
+                        <div class="rounded-2xl bg-charcoal text-white shadow-xl p-6 flex flex-col justify-center">
+                            <span class="text-gold uppercase tracking-[0.22em] text-[11px] font-bold mb-3">Festival Spirit</span>
+                            <h3 class="font-serif text-2xl mb-3">Culture, Legacy, Celebration</h3>
+                            <p class="text-sand/75 text-sm leading-relaxed">
+                                A meaningful celebration that blends historical memory with music, pageantry, and community participation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURE CARDS -->
+        <section class="py-20 bg-white/50">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="festival-card bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300 border-t-4 border-gold">
+                        <div class="text-orange text-3xl mb-4">&#127963;&#65039;</div>
+                        <h3 class="font-serif text-xl text-brown mb-3">Cultural Heritage</h3>
+                        <p class="text-sm text-gray-600 mb-4">Discover the deep roots of the Antique&ntilde;o people, from the Ati culture to the Malay legacy.</p>
+                        <a href="html/history.html" class="text-deepRed font-bold hover:underline">Learn More &rarr;</a>
+                    </div>
+
+                    <div class="festival-card bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300 border-t-4 border-orange">
+                        <div class="text-orange text-3xl mb-4">&#129345;</div>
+                        <h3 class="font-serif text-xl text-brown mb-3">Festival Activities</h3>
+                        <p class="text-sm text-gray-600 mb-4">From street dancing to the "Malay-Ati" performances, witness a spectacle of color and sound.</p>
+                        <a href="html/events.html" class="text-deepRed font-bold hover:underline">View Schedule &rarr;</a>
+                    </div>
+
+                    <div class="festival-card bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-all duration-300 border-t-4 border-seaBlue">
+                        <div class="text-orange text-3xl mb-4">&#128240;</div>
+                        <h3 class="font-serif text-xl text-brown mb-3">News & Updates</h3>
+                        <p class="text-sm text-gray-600 mb-4">Stay informed with the latest news, announcements, and results from festival competitions.</p>
+                        <a href="html/news.html" class="text-deepRed font-bold hover:underline">Read News &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCHEDULE PREVIEW -->
+        <section class="py-24 px-6 md:px-20 bg-white">
+            <div class="container mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <span class="text-orange font-bold uppercase tracking-widest text-sm italic">Festival Schedule Preview</span>
+                    <h2 class="font-serif text-4xl md:text-5xl text-brown mt-2 mb-5 italic">Highlights of the Celebration</h2>
+                    <p class="text-charcoal/80 leading-relaxed">
+                        Experience a vibrant lineup of ceremonial, cultural, and community-centered activities that bring the Binirayan Festival to life.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <div class="bg-sand/50 border border-gold/20 rounded-2xl p-8 shadow-lg">
+                        <span class="text-xs uppercase tracking-[0.25em] text-orange font-bold">Day 1</span>
+                        <h3 class="font-serif text-2xl text-brown mt-3 mb-3">Opening Ceremony</h3>
+                        <p class="text-sm text-charcoal/70 leading-relaxed">A formal opening program that welcomes guests, communities, and performers to the celebration.</p>
+                    </div>
+
+                    <div class="bg-sand/50 border border-gold/20 rounded-2xl p-8 shadow-lg">
+                        <span class="text-xs uppercase tracking-[0.25em] text-orange font-bold">Day 2</span>
+                        <h3 class="font-serif text-2xl text-brown mt-3 mb-3">Street Dancing & Parade</h3>
+                        <p class="text-sm text-charcoal/70 leading-relaxed">A colorful showcase of movement, costumes, rhythm, and creative presentations inspired by local culture.</p>
+                    </div>
+
+                    <div class="bg-sand/50 border border-gold/20 rounded-2xl p-8 shadow-lg">
+                        <span class="text-xs uppercase tracking-[0.25em] text-orange font-bold">Day 3</span>
+                        <h3 class="font-serif text-2xl text-brown mt-3 mb-3">Cultural Performances</h3>
+                        <p class="text-sm text-charcoal/70 leading-relaxed">Stage-based performances featuring storytelling, dance, music, and community artistry.</p>
+                    </div>
+
+                    <div class="bg-sand/50 border border-gold/20 rounded-2xl p-8 shadow-lg">
+                        <span class="text-xs uppercase tracking-[0.25em] text-orange font-bold">Day 4</span>
+                        <h3 class="font-serif text-2xl text-brown mt-3 mb-3">Festival Competitions</h3>
+                        <p class="text-sm text-charcoal/70 leading-relaxed">Creative contests and public showcases that encourage participation from schools and local groups.</p>
+                    </div>
+
+                    <div class="bg-sand/50 border border-gold/20 rounded-2xl p-8 shadow-lg">
+                        <span class="text-xs uppercase tracking-[0.25em] text-orange font-bold">Day 5</span>
+                        <h3 class="font-serif text-2xl text-brown mt-3 mb-3">Community Activities</h3>
+                        <p class="text-sm text-charcoal/70 leading-relaxed">Public gatherings, exhibits, and community-centered programs that celebrate Antique&ntilde;o identity.</p>
+                    </div>
+
+                    <div class="bg-sand/50 border border-gold/20 rounded-2xl p-8 shadow-lg">
+                        <span class="text-xs uppercase tracking-[0.25em] text-orange font-bold">Finale</span>
+                        <h3 class="font-serif text-2xl text-brown mt-3 mb-3">Closing Program</h3>
+                        <p class="text-sm text-charcoal/70 leading-relaxed">A concluding celebration of gratitude, pride, reflection, and the continuing spirit of Binirayan.</p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-10">
+                    <a href="html/events.html" class="inline-block bg-deepRed hover:bg-orange text-white px-8 py-4 rounded-full font-semibold tracking-wide shadow-xl transition-all duration-300">
+                        View Full Events Page
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWS & UPDATES PREVIEW -->
+        <section class="py-16 md:py-20 px-6 md:px-20 bg-charcoal text-white">
+            <div class="container mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-10 md:mb-12">
+                    <span class="text-gold font-bold uppercase tracking-[0.28em] text-xs italic">Active Festival Feed</span>
+                    <h2 class="font-serif text-4xl md:text-5xl mt-3 mb-4 italic leading-tight">News &amp; Updates</h2>
+                    <p class="text-sand/75 leading-relaxed text-base md:text-lg max-w-2xl mx-auto">
+                        Stay connected with the latest announcements, featured stories, upcoming activities, and important public reminders.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-[minmax(0,1.9fr)_minmax(320px,0.8fr)] gap-6 xl:gap-8 items-start">
+                    <article class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
+                        <img
+                            src="images/photos/Binirayan_Festival_of_Antique.webp"
+                            alt="Featured festival performance"
+                            class="w-full h-72 md:h-[380px] lg:h-[420px] object-cover"
+                        >
+                        <div class="p-6 md:p-8">
+                            <span class="text-gold uppercase tracking-[0.22em] text-[11px] md:text-xs font-bold block mb-4">
+                                Featured Story &bull; November 30, 2026
+                            </span>
+
+                            <h3 class="font-serif text-2xl md:text-4xl leading-tight mb-4">
+                                Festival Week Preparations Highlight Antique's Shared Pride
+                            </h3>
+
+                            <p class="text-sand/75 leading-relaxed text-sm md:text-base max-w-3xl mb-6">
+                                Organizers, local groups, and performers continue preparations for a celebration that brings together heritage, artistry, and public participation across the province.
+                            </p>
+
+                            <a href="html/news.html" class="inline-flex items-center text-gold font-bold hover:underline">
+                                Read Full Story &rarr;
+                            </a>
+                        </div>
+                    </article>
+
+                    <div class="grid gap-5">
+                        <article class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-7 shadow-lg min-h-[180px] flex flex-col justify-center">
+                            <span class="text-gold uppercase tracking-[0.2em] text-[11px] font-bold mb-4">November 28, 2026</span>
+                            <h3 class="font-serif text-xl md:text-2xl leading-snug mb-3">Opening Program Guidelines Released</h3>
+                            <p class="text-sm md:text-base text-sand/70 leading-relaxed">
+                                Public reminders and attendance guidance have been shared ahead of the opening day celebration.
+                            </p>
+                        </article>
+
+                        <article class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-7 shadow-lg min-h-[180px] flex flex-col justify-center">
+                            <span class="text-gold uppercase tracking-[0.2em] text-[11px] font-bold mb-4">November 26, 2026</span>
+                            <h3 class="font-serif text-xl md:text-2xl leading-snug mb-3">School Groups Prepare for Cultural Showcase</h3>
+                            <p class="text-sm md:text-base text-sand/70 leading-relaxed">
+                                Student performers and community artists continue rehearsals for heritage-inspired presentations.
+                            </p>
+                        </article>
+
+                        <article class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-7 shadow-lg min-h-[180px] flex flex-col justify-center">
+                            <span class="text-gold uppercase tracking-[0.2em] text-[11px] font-bold mb-4">November 24, 2026</span>
+                            <h3 class="font-serif text-xl md:text-2xl leading-snug mb-3">Festival Viewing Areas Announced</h3>
+                            <p class="text-sm md:text-base text-sand/70 leading-relaxed">
+                                Visitors are encouraged to review designated viewing points and activity zones across major areas.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8 md:mt-10">
+                    <a href="html/news.html" class="inline-flex items-center justify-center border border-gold text-gold hover:bg-gold hover:text-charcoal px-8 py-3.5 rounded-full font-semibold tracking-wide transition-all duration-300">
+                        View All News &amp; Updates
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="py-20 px-6 md:px-20 bg-gradient-to-r from-deepRed to-brown text-white">
+            <div class="container mx-auto text-center max-w-4xl">
+                <span class="text-gold uppercase tracking-[0.3em] text-xs font-bold">Celebrate with Antique</span>
+                <h2 class="font-serif text-4xl md:text-5xl mt-4 mb-6 italic">Experience the Spirit of Binirayan</h2>
+                <p class="text-sand/80 leading-relaxed mb-8 text-lg">
+                    Discover the stories, performances, traditions, and community pride that make the Binirayan Festival a meaningful celebration of Antique's heritage.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="html/events.html" class="bg-white text-deepRed hover:bg-gold hover:text-charcoal px-8 py-4 rounded-full font-semibold tracking-wide shadow-xl transition-all duration-300">
+                        See Festival Events
+                    </a>
+                    <a href="html/contact.html" class="border border-white/40 hover:border-gold hover:text-gold px-8 py-4 rounded-full font-semibold tracking-wide transition-all duration-300">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER (Shared Site Footer) ========== -->
+    <footer class="bg-charcoal text-sand pt-16 pb-8 px-6">
+        <div class="container mx-auto grid md:grid-cols-4 gap-12 mb-12 border-b border-gray-700 pb-12">
+            <div class="col-span-1">
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-10 h-10 bg-gold rounded-full overflow-hidden flex items-center justify-center border-2 border-white shadow-lg">
+                        <img src="images/logo/ChatGPT Image Apr 2, 2026, 10_10_58 PM.webp" alt="Binirayan Logo" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <span class="font-serif text-xl tracking-widest text-white">BINIRAYAN</span>
+                </div>
+                <p class="text-sm text-gray-400 leading-relaxed italic">
+                    The Binirayan Festival celebrates the historic arrival of the ten Bornean Datus in the island of Panay.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-white font-serif mb-6 uppercase tracking-widest text-lg">Quick Links</h2>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="html/about.html" class="hover:text-gold transition">About Antique</a></li>
+                    <li><a href="html/history.html" class="hover:text-gold transition">History of Binirayan</a></li>
+                    <li><a href="html/events.html" class="hover:text-gold transition">Full Schedule</a></li>
+                    <li><a href="html/gallery.html" class="hover:text-gold transition">Photo Gallery</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-white font-serif mb-6 uppercase tracking-widest text-lg">Follow Us</h2>
+                <div class="flex items-center gap-3">
+                    <a href="https://www.facebook.com/binirayan2025"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visit Binirayan 2025 Facebook page"
+                       class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold hover:text-charcoal text-white flex items-center justify-center transition-all duration-300 shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-4 h-4 fill-current">
+                            <path d="M279.14 288l14.22-92.66h-88.91V135.1c0-25.35 12.42-50.06 52.24-50.06H297V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.instagram.com/antiquetourismoffice/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visit Antique Tourism Office Instagram page"
+                       class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold hover:text-charcoal text-white flex items-center justify-center transition-all duration-300 shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 fill-current">
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.4-74.7-74.7s33.4-74.7 74.7-74.7 74.7 33.4 74.7 74.7-33.5 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9-14.9 0-26.9-12-26.9-26.9 0-14.9 12-26.9 26.9-26.9 14.8 0 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.3-9.8-66.7-35.6-92.4S354.2 3.7 318.9 2C283.4.3 164.7.3 129.2 2 93.9 3.7 62.5 11.8 36.8 37.6S3.7 93.9 2 129.2C.3 164.7.3 283.4 2 318.9c1.7 35.3 9.8 66.7 35.6 92.4s57.1 33.9 92.4 35.6c35.5 1.7 154.2 1.7 189.7 0 35.3-1.7 66.7-9.8 92.4-35.6s33.9-57.1 35.6-92.4c1.7-35.5 1.7-154.2 0-189.7zM398.8 388c-7.7 19.3-22.6 34.2-41.9 41.9-29 11.5-97.8 8.8-132.8 8.8s-103.9 2.7-132.8-8.8c-19.3-7.7-34.2-22.6-41.9-41.9-11.5-29-8.8-97.8-8.8-132.8s-2.7-103.9 8.8-132.8c7.7-19.3 22.6-34.2 41.9-41.9 29-11.5 97.8-8.8 132.8-8.8s103.9-2.7 132.8 8.8c19.3 7.7 34.2 22.6 41.9 41.9 11.5 29 8.8 97.8 8.8 132.8s2.7 103.8-8.8 132.8z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.youtube.com/@ProvTourismAntique/videos"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visit Love Antique YouTube channel"
+                       class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold hover:text-charcoal text-white flex items-center justify-center transition-all duration-300 shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-4 h-4 fill-current">
+                            <path d="M549.655 124.083c-6.281-23.65-24.812-42.172-48.463-48.453C458.769 64 288 64 288 64S117.231 64 74.808 75.63c-23.651 6.281-42.182 24.803-48.463 48.453C16 166.505 16 256 16 256s0 89.495 10.345 131.917c6.281 23.65 24.812 42.172 48.463 48.453C117.231 448 288 448 288 448s170.769 0 213.192-11.63c23.651-6.281 42.182-24.803 48.463-48.453C560 345.495 560 256 560 256s0-89.495-10.345-131.917zM232 336V176l142 80-142 80z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-white font-serif mb-6 uppercase tracking-widest text-lg">Location</h2>
+                <a href="html/contact.html#festival-map"
+                   aria-label="Go to festival map on the Contact page"
+                   class="text-sm text-gray-400 leading-relaxed italic hover:text-gold transition inline-block">
+                    Provincial Capitol Ground,<br>
+                    San Jose de Buenavista,<br>
+                    Antique, Philippines
+                </a>
+            </div>
+        </div>
+
+        <div class="text-center text-xs text-gray-500">
+            <p>&copy; 2026 Binirayan Festival. All Rights Reserved.</p>
+            <p class="mt-2 text-gold/50 italic">Note: This is a school project for WS101.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

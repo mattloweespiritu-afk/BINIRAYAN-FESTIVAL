@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Binirayan Festival</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/tailwind-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/webp" href="../images/logo/ChatGPT Image Apr 2, 2026, 10_10_58 PM.webp">
+</head>
+<body class="bg-sand text-charcoal font-sans overflow-x-hidden">
+
+    <!-- ========== NAVBAR (Top Navigation Bar) ========== -->
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center bg-charcoal">
+        <div class="flex items-center space-x-3">
+            <div class="w-12 h-12 bg-gold rounded-full overflow-hidden flex items-center justify-center border-2 border-white shadow-lg">
+                <img src="../images/logo/ChatGPT Image Apr 2, 2026, 10_10_58 PM.webp" alt="Binirayan Logo" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div>
+                <div class="text-white font-serif font-bold leading-none tracking-wider text-xl">BINIRAYAN</div>
+                <p class="text-gold text-[10px] uppercase tracking-[0.2em]">Antique, Philippines</p>
+            </div>
+        </div>
+
+        <ul class="hidden lg:flex space-x-8 font-semibold text-sm uppercase tracking-widest text-white">
+            <li><a href="../index.html" class="nav-link hover:text-gold transition">Home</a></li>
+            <li><a href="about.html" class="nav-link hover:text-gold transition">About</a></li>
+            <li><a href="history.html" class="nav-link hover:text-gold transition">History</a></li>
+            <li><a href="events.html" class="nav-link hover:text-gold transition">Events</a></li>
+            <li><a href="gallery.html" class="nav-link active text-gold" aria-current="page">Gallery</a></li>
+            <li><a href="news.html" class="nav-link hover:text-gold transition">News</a></li>
+            <li><a href="contact.html" class="nav-link hover:text-gold transition">Contact</a></li>
+        </ul>
+
+        <button id="menu-btn" class="lg:hidden text-white focus:outline-none" aria-label="Open menu">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- MOBILE SIDEBAR -->
+    <div id="sidebar" class="fixed inset-0 bg-charcoal z-[60] transform translate-x-full transition-transform duration-300 lg:hidden">
+        <div class="flex justify-end p-6">
+            <button id="close-btn" class="text-white text-4xl" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="flex flex-col items-center space-y-8 pt-10 text-white font-serif text-2xl">
+            <li><a href="../index.html" class="hover:text-gold">Home</a></li>
+            <li><a href="about.html" class="hover:text-gold">About</a></li>
+            <li><a href="history.html" class="hover:text-gold">History</a></li>
+            <li><a href="events.html" class="hover:text-gold">Events</a></li>
+            <li><a href="gallery.html" class="text-gold" aria-current="page">Gallery</a></li>
+            <li><a href="news.html" class="hover:text-gold">News</a></li>
+            <li><a href="contact.html" class="hover:text-gold">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ========== BODY/CONTENT (Main Page Content) ========== -->
+    <!-- HERO -->
+    <header class="relative min-h-[62vh] flex items-center overflow-hidden">
+        <img src="../images/photos/Binirayan_Festival_of_Antique.webp" alt="Binirayan Festival gallery hero" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-charcoal/85 via-brown/60 to-charcoal/45"></div>
+
+        <div class="relative z-10 container mx-auto px-6 md:px-12 py-20">
+            <div class="max-w-3xl">
+                <span class="inline-block text-gold uppercase tracking-[0.3em] text-xs md:text-sm font-bold mb-5">
+                    Festival Gallery
+                </span>
+                <h1 class="font-serif text-4xl md:text-6xl xl:text-7xl text-white leading-[0.95] mb-5 max-w-2xl">
+                    Moments of Color, Culture, and Celebration
+                </h1>
+                <p class="text-sand/90 text-base md:text-lg leading-relaxed max-w-2xl">
+                    Explore festival highlights through photos and video — from cultural performances and heritage symbols to community celebrations across Antique.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 md:py-20">
+
+        <!-- INTRO -->
+        <section class="max-w-4xl mx-auto text-center mb-14 md:mb-16">
+            <span class="text-orange font-bold uppercase tracking-[0.24em] text-xs">Photo & Video Highlights</span>
+            <h2 class="font-serif text-3xl md:text-5xl text-brown mt-3 mb-5">Festival Memories in Focus</h2>
+            <p class="text-lg leading-relaxed text-charcoal/80">
+                This gallery captures the vibrant atmosphere of Binirayan through performances, heritage symbols, crowd moments, and cultural pride.
+            </p>
+        </section>
+
+        <!-- FILTERS -->
+        <section class="mb-10">
+            <div class="flex flex-wrap justify-center gap-3">
+                <button class="gallery-filter-btn active px-5 py-2.5 rounded-full bg-deepRed text-white text-sm font-semibold" data-filter="all">All</button>
+                <button class="gallery-filter-btn px-5 py-2.5 rounded-full bg-white text-brown text-sm font-semibold border border-gold/20" data-filter="performances">Performances</button>
+                <button class="gallery-filter-btn px-5 py-2.5 rounded-full bg-white text-brown text-sm font-semibold border border-gold/20" data-filter="heritage">Heritage</button>
+                <button class="gallery-filter-btn px-5 py-2.5 rounded-full bg-white text-brown text-sm font-semibold border border-gold/20" data-filter="community">Community</button>
+                <button class="gallery-filter-btn px-5 py-2.5 rounded-full bg-white text-brown text-sm font-semibold border border-gold/20" data-filter="festival">Festival Highlights</button>
+            </div>
+        </section>
+
+        <!-- GALLERY GRID -->
+        <section class="mb-20 md:mb-24">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-[220px]">
+
+                <button class="gallery-item group relative overflow-hidden text-left sm:col-span-2 lg:row-span-2"
+                        data-category="festival"
+                        data-image="../images/photos/Binirayan_Festival_of_Antique.webp"
+                        data-title="Binirayan Showcase"
+                        data-caption="A vibrant festival highlight capturing movement, costume, and celebration.">
+                    <img src="../images/photos/Binirayan_Festival_of_Antique.webp" alt="Binirayan showcase" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-80 group-hover:opacity-100 transition"></div>
+                    <div class="absolute bottom-0 left-0 p-4 md:p-5">
+                        <h3 class="font-serif text-white text-2xl md:text-3xl">Binirayan Showcase</h3>
+                        <p class="text-sand/80 text-sm mt-1">Festival Highlights</p>
+                    </div>
+                </button>
+
+                <button class="gallery-item group relative overflow-hidden text-left"
+                        data-category="heritage"
+                        data-image="../images/photos/530936795_1086006340338670_1975303508160695955_n.webp"
+                        data-title="Heritage Monument"
+                        data-caption="A strong visual symbol of Antique’s remembered history and identity.">
+                    <img src="../images/photos/530936795_1086006340338670_1975303508160695955_n.webp" alt="Heritage monument" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-80 group-hover:opacity-100 transition"></div>
+                    <div class="absolute bottom-0 left-0 p-4">
+                        <h3 class="font-serif text-white text-2xl">Heritage Monument</h3>
+                        <p class="text-sand/80 text-sm mt-1">Heritage</p>
+                    </div>
+                </button>
+
+                <button class="gallery-item group relative overflow-hidden text-left"
+                        data-category="performances"
+                        data-image="../images/photos/7217076_begjnq4689_l.webp"
+                        data-title="Dance Performance"
+                        data-caption="Movement, rhythm, and costume come together in festival performance.">
+                    <img src="../images/photos/7217076_begjnq4689_l.webp" alt="Dance performance" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-80 group-hover:opacity-100 transition"></div>
+                    <div class="absolute bottom-0 left-0 p-4">
+                        <h3 class="font-serif text-white text-2xl">Dance Performance</h3>
+                        <p class="text-sand/80 text-sm mt-1">Performances</p>
+                    </div>
+                </button>
+
+                <button class="gallery-item group relative overflow-hidden text-left"
+                        data-category="community"
+                        data-image="../images/photos/488227200_1076942467811309_5477980145151033462_n.webp"
+                        data-title="Festival Celebration"
+                        data-caption="A festival moment filled with public energy and celebration.">
+                    <img src="../images/photos/488227200_1076942467811309_5477980145151033462_n.webp" alt="Festival celebration" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-80 group-hover:opacity-100 transition"></div>
+                    <div class="absolute bottom-0 left-0 p-4">
+                        <h3 class="font-serif text-white text-2xl">Festival Celebration</h3>
+                        <p class="text-sand/80 text-sm mt-1">Community</p>
+                    </div>
+                </button>
+
+                <button class="gallery-item group relative overflow-hidden text-left lg:row-span-2"
+                        data-category="festival"
+                        data-image="../images/photos/600276454_1435629227929225_4529162008260032033_n.webp"
+                        data-title="Festival Atmosphere"
+                        data-caption="A colorful scene that reflects the excitement of Binirayan.">
+                    <img src="../images/photos/600276454_1435629227929225_4529162008260032033_n.webp" alt="Festival atmosphere" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-80 group-hover:opacity-100 transition"></div>
+                    <div class="absolute bottom-0 left-0 p-4">
+                        <h3 class="font-serif text-white text-2xl">Festival Atmosphere</h3>
+                        <p class="text-sand/80 text-sm mt-1">Festival Highlights</p>
+                    </div>
+                </button>
+
+                <button class="gallery-item group relative overflow-hidden text-left"
+                        data-category="heritage"
+                        data-image="../images/photos/ati.webp"
+                        data-title="Ati Heritage"
+                        data-caption="A cultural image reflecting the heritage dimension of the festival story.">
+                    <img src="../images/photos/ati.webp" alt="Ati heritage" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-80 group-hover:opacity-100 transition"></div>
+                    <div class="absolute bottom-0 left-0 p-4">
+                        <h3 class="font-serif text-white text-2xl">Ati Heritage</h3>
+                        <p class="text-sand/80 text-sm mt-1">Heritage</p>
+                    </div>
+                </button>
+
+                <button class="gallery-item group relative overflow-hidden text-left"
+                        data-category="festival"
+                        data-image="../images/photos/binirayan festival.webp"
+                        data-title="Festival Scene"
+                        data-caption="A lively look into the visual identity of the celebration.">
+                    <img src="../images/photos/binirayan festival.webp" alt="Festival scene" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-80 group-hover:opacity-100 transition"></div>
+                    <div class="absolute bottom-0 left-0 p-4">
+                        <h3 class="font-serif text-white text-2xl">Festival Scene</h3>
+                        <p class="text-sand/80 text-sm mt-1">Festival Highlights</p>
+                    </div>
+                </button>
+
+                <button class="gallery-item group relative overflow-hidden text-left"
+                        data-category="festival"
+                        data-image="../images/photos/images (2) (1).webp"
+                        data-title="Festival Highlights"
+                        data-caption="A visual highlight from the broader celebration.">
+                    <img src="../images/photos/images (2) (1).webp" alt="Festival highlights" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-80 group-hover:opacity-100 transition"></div>
+                    <div class="absolute bottom-0 left-0 p-4">
+                        <h3 class="font-serif text-white text-2xl">Festival Highlights</h3>
+                        <p class="text-sand/80 text-sm mt-1">Festival Highlights</p>
+                    </div>
+                </button>
+
+                <button class="gallery-item group relative overflow-hidden text-left"
+                        data-category="performances"
+                        data-image="../images/photos/messengercreationa491d525-c15f-4ad0-b8ef-eaa160b7ad0d.webp"
+                        data-title="Performance Detail"
+                        data-caption="A closer look at movement, costume, and stage presence.">
+                    <img src="../images/photos/messengercreationa491d525-c15f-4ad0-b8ef-eaa160b7ad0d.webp" alt="Performance detail" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-80 group-hover:opacity-100 transition"></div>
+                    <div class="absolute bottom-0 left-0 p-4">
+                        <h3 class="font-serif text-white text-2xl">Performance Detail</h3>
+                        <p class="text-sand/80 text-sm mt-1">Performances</p>
+                    </div>
+                </button>
+
+            </div>
+        </section>
+
+        <!-- VIDEO SECTION -->
+        <section class="mb-20 md:mb-24">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-orange font-bold uppercase tracking-[0.22em] text-xs">Video Highlight</span>
+                <h2 class="font-serif text-3xl md:text-5xl text-brown mt-3 mb-4">Festival in Motion</h2>
+                <p class="text-charcoal/80 leading-relaxed text-lg">
+                    Watch a featured Binirayan performance and experience the movement, music, and atmosphere of the celebration.
+                </p>
+            </div>
+
+            <div class="max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-white/70 bg-charcoal">
+                <video controls class="w-full h-[320px] sm:h-[420px] md:h-[560px] lg:h-[680px] object-contain bg-black">
+                    <source src="../videos/snaptik_7588341116596931847_v3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section>
+            <div class="bg-charcoal text-white rounded-3xl px-8 md:px-14 py-12 shadow-2xl text-center">
+                <span class="text-gold uppercase tracking-[0.25em] text-xs font-bold">Continue Exploring</span>
+                <h2 class="font-serif text-3xl md:text-5xl mt-4 mb-5">See More of the Festival Experience</h2>
+                <p class="text-sand/75 max-w-2xl mx-auto leading-relaxed mb-8">
+                    Explore the events, history, and latest festival updates to understand the full spirit of Binirayan.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="events.html" class="bg-gold text-charcoal hover:bg-white px-8 py-4 rounded-full font-semibold transition-all duration-300">
+                        View Events
+                    </a>
+                    <a href="history.html" class="bg-deepRed hover:bg-orange text-white px-8 py-4 rounded-full font-semibold transition-all duration-300">
+                        Explore History
+                    </a>
+                    <a href="news.html" class="border border-white/30 hover:border-gold hover:text-gold px-8 py-4 rounded-full font-semibold transition-all duration-300">
+                        Read Updates
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="fixed inset-0 bg-black/95 z-[100] hidden items-center justify-center px-4">
+        <button id="lightbox-close" class="absolute top-5 right-6 text-white text-4xl leading-none z-10" aria-label="Close image viewer">&times;</button>
+        <button id="lightbox-prev" class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white text-4xl leading-none z-10" aria-label="Previous image">&#10094;</button>
+        <button id="lightbox-next" class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white text-4xl leading-none z-10" aria-label="Next image">&#10095;</button>
+
+        <div class="max-w-6xl w-full text-center">
+            <img id="lightbox-image" src="" alt="" class="w-full max-h-[78vh] object-contain rounded-xl shadow-2xl">
+            <div class="mt-5">
+                <p id="lightbox-counter" class="text-gold text-sm mb-2"></p>
+                <h3 id="lightbox-title" class="font-serif text-white text-2xl md:text-3xl"></h3>
+                <p id="lightbox-caption" class="text-sand/80 mt-2 max-w-3xl mx-auto"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER (Shared Site Footer) ========== -->
+<footer class="bg-charcoal text-sand pt-16 pb-8 px-6">
+        <div class="container mx-auto grid md:grid-cols-4 gap-12 mb-12 border-b border-gray-700 pb-12">
+            <div class="col-span-1">
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-10 h-10 bg-gold rounded-full overflow-hidden flex items-center justify-center border-2 border-white shadow-lg">
+                        <img src="../images/logo/ChatGPT Image Apr 2, 2026, 10_10_58 PM.webp" alt="Binirayan Logo" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <span class="font-serif text-xl tracking-widest text-white">BINIRAYAN</span>
+                </div>
+                <p class="text-sm text-gray-400 leading-relaxed italic">
+                    The Binirayan Festival celebrates the historic arrival of the ten Bornean Datus in the island of Panay.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-white font-serif mb-6 uppercase tracking-widest text-lg">Quick Links</h2>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="about.html" class="hover:text-gold transition">About Antique</a></li>
+                    <li><a href="history.html" class="hover:text-gold transition">History of Binirayan</a></li>
+                    <li><a href="events.html" class="hover:text-gold transition">Full Schedule</a></li>
+                    <li><a href="gallery.html" class="hover:text-gold transition">Photo Gallery</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-white font-serif mb-6 uppercase tracking-widest text-lg">Follow Us</h2>
+                <div class="flex items-center gap-3">
+                    <a href="https://www.facebook.com/binirayan2025"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visit Binirayan 2025 Facebook page"
+                       class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold hover:text-charcoal text-white flex items-center justify-center transition-all duration-300 shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-4 h-4 fill-current">
+                            <path d="M279.14 288l14.22-92.66h-88.91V135.1c0-25.35 12.42-50.06 52.24-50.06H297V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.instagram.com/antiquetourismoffice/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visit Antique Tourism Office Instagram page"
+                       class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold hover:text-charcoal text-white flex items-center justify-center transition-all duration-300 shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 fill-current">
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.4-74.7-74.7s33.4-74.7 74.7-74.7 74.7 33.4 74.7 74.7-33.5 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9-14.9 0-26.9-12-26.9-26.9 0-14.9 12-26.9 26.9-26.9 14.8 0 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.3-9.8-66.7-35.6-92.4S354.2 3.7 318.9 2C283.4.3 164.7.3 129.2 2 93.9 3.7 62.5 11.8 36.8 37.6S3.7 93.9 2 129.2C.3 164.7.3 283.4 2 318.9c1.7 35.3 9.8 66.7 35.6 92.4s57.1 33.9 92.4 35.6c35.5 1.7 154.2 1.7 189.7 0 35.3-1.7 66.7-9.8 92.4-35.6s33.9-57.1 35.6-92.4c1.7-35.5 1.7-154.2 0-189.7zM398.8 388c-7.7 19.3-22.6 34.2-41.9 41.9-29 11.5-97.8 8.8-132.8 8.8s-103.9 2.7-132.8-8.8c-19.3-7.7-34.2-22.6-41.9-41.9-11.5-29-8.8-97.8-8.8-132.8s-2.7-103.9 8.8-132.8c7.7-19.3 22.6-34.2 41.9-41.9 29-11.5 97.8-8.8 132.8-8.8s103.9-2.7 132.8 8.8c19.3 7.7 34.2 22.6 41.9 41.9 11.5 29 8.8 97.8 8.8 132.8s2.7 103.8-8.8 132.8z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.youtube.com/@ProvTourismAntique/videos"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visit Love Antique YouTube channel"
+                       class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold hover:text-charcoal text-white flex items-center justify-center transition-all duration-300 shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-4 h-4 fill-current">
+                            <path d="M549.655 124.083c-6.281-23.65-24.812-42.172-48.463-48.453C458.769 64 288 64 288 64S117.231 64 74.808 75.63c-23.651 6.281-42.182 24.803-48.463 48.453C16 166.505 16 256 16 256s0 89.495 10.345 131.917c6.281 23.65 24.812 42.172 48.463 48.453C117.231 448 288 448 288 448s170.769 0 213.192-11.63c23.651-6.281 42.182-24.803 48.463-48.453C560 345.495 560 256 560 256s0-89.495-10.345-131.917zM232 336V176l142 80-142 80z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-white font-serif mb-6 uppercase tracking-widest text-lg">Location</h2>
+                <a href="contact.html#festival-map"
+                   aria-label="Go to festival map on the Contact page"
+                   class="text-sm text-gray-400 leading-relaxed italic hover:text-gold transition inline-block">
+                    Provincial Capitol Ground,<br>
+                    San Jose de Buenavista,<br>
+                    Antique, Philippines
+                </a>
+            </div>
+        </div>
+
+        <div class="text-center text-xs text-gray-500">
+            <p>&copy; 2026 Binirayan Festival. All Rights Reserved.</p>
+            <p class="mt-2 text-gold/50 italic">Note: This is a school project for WS101.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
