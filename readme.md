@@ -4,90 +4,52 @@
 
 ## Short Overview of the Project
 
-The **Binirayan Festival Website** is an informational and promotional website about the Binirayan Festival of Antique, Philippines. It was created to introduce visitors to the festival's history, cultural meaning, activities, event highlights, gallery, news, and contact information.
-
-This project presents Binirayan not only as a yearly celebration, but also as a way of remembering Antique's heritage and community identity. Through photos, video, warm colors, and organized pages, the website helps students, tourists, and local visitors understand what the festival is about and why it is important to the people of Antique.
-
-The website is also made as a WS101 front-end project, so it focuses on clear page structure, responsive design, basic accessibility, and interactive features using HTML, CSS, and JavaScript.
+The **Binirayan Festival Website** is an informational and promotional website about the Binirayan Festival of Antique, Philippines. It was created to introduce visitors to the festival's history, cultural meaning, activities, event highlights, gallery, news, and contact information. This project presents Binirayan not only as a yearly celebration, but also as a way of remembering Antique's heritage and community identity.
 
 ## Framework Used
 
-The main framework used in this project is **Tailwind CSS**, loaded through CDN.
+The main framework used in this project is **Tailwind CSS**, loaded through CDN. Other technologies include HTML5, Custom CSS, Vanilla JavaScript, Google Fonts, Google Maps Embed, and WebP images, MP4 video, and audio assets.
 
-Other technologies and tools used:
+## URL/Domain
 
-- **HTML5** for the structure of the website pages
-- **Tailwind CSS** for layout, spacing, colors, responsiveness, and styling
-- **Custom CSS** for extra animations, hover effects, image styles, and accessibility support
-- **Vanilla JavaScript** for the mobile menu, countdown timer, gallery filters, lightbox, smooth scrolling, active navigation, and contact form validation
-- **Google Fonts** for the Cinzel and Poppins font styles
-- **Google Maps Embed** for the map section on the Contact page
-- **WebP images, MP4 video, and audio assets** for the visual and cultural presentation of the website
+**GitHub Pages:** https://mattloweespiritu-afk.github.io/BINIRAYAN-FESTIVAL/
 
-## URL / Domain
-
-The project is published online using GitHub Pages.
-
-**Live Website:** https://mattloweespiritu-afk.github.io/BINIRAYAN-FESTIVAL/
-
-## Website Pages
-
-| Page | File | Purpose |
-| --- | --- | --- |
-| Home | `index.html` | Introduces the festival with a video hero, countdown, featured sections, event preview, and news preview. |
-| About | `html/about.html` | Explains what Binirayan is and highlights its cultural value. |
-| History | `html/history.html` | Shares the historical background, including the Bornean Datus and the Malandog landing story. |
-| Events | `html/events.html` | Shows the festival schedule, featured activities, venues, and event categories. |
-| Gallery | `html/gallery.html` | Displays festival photos and videos with filtering and lightbox viewing. |
-| News | `html/news.html` | Organizes festival updates, announcements, reminders, and featured stories. |
-| Contact | `html/contact.html` | Provides visitor information, a demo inquiry form, and an embedded map. |
-
-## Key Features
-
-- Responsive navigation with desktop and mobile menu support
-- Full-screen video hero section on the Home page
-- Background audio connected to the hero section
-- Festival countdown timer
-- Multi-page layout for easier browsing
-- Event schedule cards
-- Gallery category filtering
-- Image lightbox with navigation controls
-- News and updates section
-- Contact page with form validation and map embed
-- Shared footer with quick links and social links
-- Basic accessibility features such as skip links, `alt` text, labels, and keyboard support for the lightbox
+**Vercel:** https://binirayan-festival.vercel.app/
 
 ## Use of AI Tool
 
-**AI Tool Used:** ChatGPT and Codex
+ChatGPT and Codex
 
-## How It Is Used
+## How it is used
 
-AI was used as a helper during the development and improvement of the project. I used ChatGPT for design ideas, layout suggestions, color and visual direction, content wording, README organization, and code guidance.
-
-It helped me make the website look more organized, improve the presentation of each page, and explain the project in a clearer way.
+- **ChatGPT:** Used for UI design, color palette development, spacing, layout suggestions, and visual direction guidance.
+- **Codex:** Used for code polishing and refinement.
 
 ## Prompt
 
-I asked ChatGPT for help in improving the design, layout, content, and README of my Binirayan Festival website.
+- "Use gold, orange, deep red, brown, sand, sea blue, and charcoal as my main color palette"
+- "Be consistent with the design and color palette"
+- "Make sure you will be consistent and the flow of our UI design and fix the navbar inconsistent design make sure to follow the index.html navbar and use it to the forms"
+- "Consumed everything the file that i layout for our web UI design especially the UI and the flow of Binirayan Festival"
+- "Add also in the footer that the location 'Provincial Capitol Ground, San Jose de Buenavista, Antique, Philippines' is clickable when it click it will redirect to contact.html will directly to the festival location make sure it will direct to the festival location when the location is click"
+- "Make sure navbar especially index to other forms is href connected"
+- "can put that in all forms and UI at navbar is inconsistent to all forms make it consistent same from index, about.html, contact.html, events.html. gallery.html. history.html. news.html make it consistent and i want also in all forms that it will stay solid if if i dont scroll down then if i scroll down it will go transparent"
+- "can you make it a little bit transparent when the scroll bar is on top?"
+- "I put a new file audio <audio controls src="audio/Antiqueño Ako.mp3" title=" "></audio> insert it to the index.html at <header id="hero-section" class="relative h-screen w-full overflow-hidden">
+            <video id="hero-video" autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+                <source src="videos/AQOSZ5Fg8iqethlPfujHWCHJHyvoBMXc-Txc7EnBqqzMu2zer3rrdjMPtLD4QlLLPfjqqT_mi5d4WasRpg8IAdEPWCwUmsXO5P-QvSBqZXLWsA.mp4" type="video/mp4">
+            </video>
+            <audio id="hero-audio" autoplay preload="auto" loop aria-hidden="true">
+                <source src="audio/Antiqueño Ako.mp3" type="audio/mpeg">
+            </audio>
+        </header>
+        When the video is played the audio will autoplay but when its scrolled down it will go off automatically make sure it has no audio icon and not clickable play audio"
+  
+- "add also to the footer a link social media fb, instagram, youtube can you find also the official website or site for the binirayan thank you"
+- "Be consistent with the UI design make it more festivity"
 
-## How It Was Applied
+## How it was applied
 
-The AI suggestions were applied to improve the website's overall design and user experience. It helped with the page layout, section arrangement, color choices, content organization, and wording of the README.
+ChatGPT's suggestions for the color palette (gold, orange, deep red, brown, sand, sea blue, and charcoal) were applied throughout the entire website to create a cohesive visual identity that reflects the cultural significance of the Binirayan Festival. The design consistency was maintained across all pages through careful application of these colors in backgrounds, text, buttons, and accent elements.
 
-ChatGPT and Codex were also used to check code structure, improve JavaScript explanations, organize the documentation, and make the project easier to present as a WS101 front-end website.
-
-## Current Limitations
-
-- The contact form is for front-end demonstration only and does not send real messages.
-- News and events are static and must be updated manually in the HTML files.
-- The website does not use a database, backend, or content management system.
-- Some media files may still need optimization for faster loading.
-
-## Future Improvements
-
-- Deploy the website online and add the live URL to this README.
-- Add a working backend for the contact form.
-- Connect news and events to a database or content management system.
-- Optimize images, video, and audio for better performance.
-- Improve accessibility through more testing and refinements.
+Codex was used to polish the HTML, CSS, and JavaScript code, improving code structure, enhancing functionality, and ensuring best practices were followed. Together, both tools helped elevate the website's overall quality, making it more visually appealing and technically sound for presentation as a WS101 front-end project.
